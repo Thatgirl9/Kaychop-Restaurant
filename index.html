@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+
+  <form class="form" id="formValidation">
+    <h1>Place Your Order at <span class="text-change">KayChop</span> </h1>
+
+    <p class="p-text">Welcome! After selecting your meal, you are required to fill the form</p>
+
+    <label for="fullName" class="full_name_label">Full Name
+      <input type="name" id="fullName" class="full_name" placeholder="Jane Okorie" autocomplete="additional-name"
+        required />
+    </label>
+
+    <label for="mealName" class="meal_name_label">Meal Name
+      <input type="name" id="mealName" class="meal_name" placeholder="Jellof Rice and Turkey"
+        autocomplete="additional-name" required />
+    </label>
+
+    <label for="email" class="email_label"> Email
+      <input type="email" class="email" id="email" placeholder="janeok@gmail.com" autocomplete="email" required>
+    </label>
+
+    <label for="orderId" class="orderId_label"> Order Id
+      <input type="number" class="order_Id" id="orderId" placeholder="2385" autocomplete="cc-number" required>
+    </label>
+
+
+    <label for="phoneNumber" class="phone_label" aria-label="phone_number">Phone Number
+      <input type="number" class="phone_number" id="phoneNumber" placeholder="0901845390" autocomplete="tel" required>
+    </label>
+
+    <label for="customerAddress" class="phone_label" aria-label="phone_number">Address
+      <input type="address" class="phone_number" id="customerAddress" placeholder="5, Bello Street, Ina Estate, Lagos"
+        autocomplete="street-address" required>
+    </label>
+
+
+    <button type="submit" class="submit" id="submit-btn">Submit</button>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
